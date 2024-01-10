@@ -6,12 +6,16 @@ import Footer from './Footer'
 
 const PageLayout = () => {
   return (
-    <div>
-      <NavBar />
-      <SideMenu />
-      <MainSection />
-      <Footer />
-    </div>
+    <>
+      <div className='px-10'>
+        <NavBar />
+        <div className='grid grid-cols-6'>
+          <SideMenu />
+          <MainSection />
+        </div>
+        <Footer />
+      </div>
+    </>
   )
 }
 

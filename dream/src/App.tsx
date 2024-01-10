@@ -5,7 +5,9 @@ import PageLayout from './components/PageLayout';
 function App() {
   return (
     <div className="App">
-      <PageLayout />
+      <div>
+        <PageLayout />
+      </div>
     </div>
   );
 }

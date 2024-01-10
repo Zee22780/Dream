@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>
+    <div className='border h-[10rem]'>
       <h1>Footer</h1>
     </div>
   )
