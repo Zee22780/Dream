@@ -4,7 +4,12 @@ import NavBar from './NavBar'
 import MainSection from './MainSection'
 import Footer from './Footer'
 
-const PageLayout = () => {
+// interface Props {
+//   children: React.ReactNode;
+// }
+
+// const PageLayout = ({children}: Props) => {
+  const PageLayout = () => {
   return (
     <>
       <div className='px-10'>
