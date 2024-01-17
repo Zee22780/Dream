@@ -9,7 +9,7 @@ const SideMenu = () => {
         <div className='flex'>
           <AddIcon />
           <div className="">
-            <a href=''>New Dream</a>
+            <a href='/newDream'>New Dream</a>
           </div>
         </div>
         {/* <div className='flex'>
