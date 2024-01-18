@@ -4,8 +4,8 @@ import NewDream from '../components/NewDream'
 const NewDreamPage = () => {
   return (
     <>
-      <div className=''>
-        <h1>Add Your Dream Here:</h1>
+      <div className='px-10'>
+        
         <NewDream />
       </div>
     </>
