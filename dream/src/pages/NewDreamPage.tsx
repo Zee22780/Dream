@@ -5,7 +5,6 @@ const NewDreamPage = () => {
   return (
     <>
       <div className='px-10'>
-        
         <NewDream />
       </div>
     </>
