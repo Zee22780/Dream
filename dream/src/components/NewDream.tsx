@@ -7,6 +7,12 @@ interface FormData {
   dream_details: string;
 }
 
+// interface Dream {
+//   id: number;
+//   date: string;
+//   dream_details: string
+// }
+
 
 const NewDream = () => {
   //manages the state of the newDream form. As user types input into text area, it is captured 
