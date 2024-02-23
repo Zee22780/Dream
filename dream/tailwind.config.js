@@ -6,7 +6,7 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {
+    colors: {
       teal: "#1F7A8C",
       blue: "#0D63BF",
       fuschia: "#f04290"

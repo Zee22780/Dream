@@ -5,8 +5,8 @@ import AddIcon from "@mui/icons-material/Add";
 const SideMenu = () => {
   return (
     <>
-      <div className='grid-cols-2 h-[35rem]'>
-        <div className='flex'>
+      <div className='grid-cols-2 h-[35rem] pl-10'>
+        <div className='flex my-5'>
           <AddIcon />
           <div className="">
             <a href='/newDream'>New Dream</a>

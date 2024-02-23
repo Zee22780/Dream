@@ -7,12 +7,6 @@ interface FormData {
   dream_details: string;
 }
 
-// interface Dream {
-//   id: number;
-//   date: string;
-//   dream_details: string
-// }
-
 
 const NewDream = () => {
   //manages the state of the newDream form. As user types input into text area, it is captured 
@@ -70,19 +64,19 @@ const NewDream = () => {
   return (
     <>
       <div className='flex flex-col justify-center mx-auto w-full'>
-      <h1 className='text-2xl flex justify-center'>Add Your Dream Here</h1>
-        <div>
+      <h1 className='text-2xl flex justify-center text-teal my-5'>Add Your Dream Here</h1>
+        <div className='flex justify-center'>
           <form action="" 
             onSubmit={(event) => handleSubmit(event, formData.date, formData.dream_details)}
           >
-            <p>Date of Dream:</p>
+            <p className='text-teal'>Date of Dream:</p>
             <input 
               type="date"
               name="date"
               value={formData.date}
               onChange={handleChange}
               />
-            <p>Dream Details:</p>
+            <p className='text-teal'>Dream Details:</p>
             <textarea 
               className='border italic w-[500px] h-[500px] cursor-text placeholder-opacity-25'
               placeholder='Provide dream details'
@@ -92,7 +86,9 @@ const NewDream = () => {
             /><br />
             <Button 
               variant='outlined'
-              type="submit">
+              type="submit"
+              style={{color: 'fuschia', borderColor: 'teal' }}
+              >
                 Submit
             </Button>
           </form>

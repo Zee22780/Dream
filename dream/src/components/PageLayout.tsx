@@ -11,7 +11,7 @@ import Footer from './Footer'
   const PageLayout = () => {
   return (
     <>
-      <div className='px-10'>
+      <div className=''>
         <div className='grid grid-cols-6'>
           <SideMenu />
           <MainSection />
