@@ -22,14 +22,27 @@ const NewDream = () => {
   })
 
   //This manages the state of the collection of dreams
-  const [ dreams, setNewDreams ] = useState(() => {
-    const listOfDreams = localStorage.getItem("dream");
-    if (listOfDreams) {
-      return JSON.parse(listOfDreams)
+  // const [ dreams, setNewDreams ] = useState(() => {
+  //   const listOfDreams = localStorage.getItem("dream");
+  //   if (listOfDreams) {
+  //     return JSON.parse(listOfDreams)
+  //   } else {
+  //     return []
+  //   }
+  // })
+  
+  const [ dreamList, setNewDreamList ] = useState(() => {
+    const savedDreamList = localStorage.getItem("dreamList");
+    if (savedDreamList) {
+      return JSON.parse(savedDreamList)
     } else {
       return []
     }
   })
+
+  useEffect( () => {
+    localStorage.setItem('dreamList', JSON.stringify(dreamList))
+  }, [dreamList])
 
   //The event type is ChangeEvent and we need to specify the type of the elements we are changing (input and text area)
   const handleChange = (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>{
@@ -39,12 +52,12 @@ const NewDream = () => {
   }
 
   //Gives each dream an id#
-  const id = dreams.length + 1
+  const id = dreamList.length + 1
 
   const handleSubmit = (event: React.FormEvent, date: string, dream_details: string) => {
     event.preventDefault();
-    setNewDreams((prev: object) => [
-        ...dreams,
+    setNewDreamList((prev: object) => [
+        ...dreamList,
         {
           id:id,
           date: date,
